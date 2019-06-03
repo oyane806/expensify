@@ -1,0 +1,21 @@
+html {
+	font-size: 62.5%;
+}
+/*This is to change the base of rem, now 1.6rem = 16px!*/
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: $m-size;
+}
+
+button {
+	cursor: pointer;
+}
+
+button:disabled {
+	cursor: default;
+}
+
+.is-active {
+	font-weight: bold;
+}
