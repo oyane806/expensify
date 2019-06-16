@@ -1,8 +1,9 @@
 import React from "react";
 
 const HelpPage = () => (
-	<div>
-		This is from my help page!
+	<div className="help">
+		<p>Use this small app to keep track of your expenses!</p>
+		<p>You can add new expenses and filter them.</p>
 	</div>
 	);
 

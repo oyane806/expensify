@@ -66,19 +66,22 @@ export default class ExpenseForm extends React.Component {
 			{this.state.error && <p>{this.state.error}</p>}
 				<form onSubmit={this.onSubmit}>
 					<input 
+                    className="item"
 					type="text"
-					placeholder="description"
+					placeholder="Description"
 					autoFocus
 					value={this.state.description}
 					onChange={this.onDescriptionChange}
 					/>
 					<input
+                    className="item"
 					type="number"
-					placeholder="amount"
+					placeholder="Amount"
 					value={this.state.amount}
 					onChange={this.onAmountChange}
 					/>
 					<SingleDatePicker
+                    className="item"
 					date={this.state.createdAt}
 					onDateChange={this.onDateChange}
 					focused={this.state.calendarFocused}
@@ -87,11 +90,12 @@ export default class ExpenseForm extends React.Component {
 					isOutsideRange={() => false}
 					/>
 					<textarea
-					placeholder="add a note to your expense (optional)"
+                    className="item"
+					placeholder="Add a note"
 					value={this.state.note}
 					onChange={this.onNoteChange}
 					/>
-					<button>add expense</button>
+					<button>Add expense</button>
 				</form>
 			</div>
         )

@@ -1,0 +1,27 @@
+.flex-table {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 25%);
+	grid-template-rows: repeat(auto-fill, 100%);
+}
+
+.end {
+	justify-self: end;
+}
+
+.table-container {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+
+.modify-link {
+    color: #ffa6bb;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.modify-link:hover,
+.modify-link:focus {
+    outline: none;
+    color: #ffeb99;
+}

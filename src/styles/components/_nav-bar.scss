@@ -1,0 +1,31 @@
+.nav-bar {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin: 0 0 4.8rem;
+}
+
+.link {
+	color: #111111;
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	white-space: nowrap;
+	padding: 1.6rem;
+}
+.link::before {
+	content: '';
+	position: absolute;
+	bottom: 15%;
+	left: -2%;
+	width: 104%;
+	height: 6px;
+	background: #ffa6bb;
+	transition: all ease-in-out 0.1s;
+	z-index: -1;
+}
+.link:hover::before {
+	height: 70%;
+	bottom: 15%;
+}

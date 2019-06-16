@@ -5,10 +5,11 @@ import selectExpenses from "../selectors/expenses.jsx";
 
 const ExpenseList = (props) => (
 	<div>
-		<h1>Expense list</h1>
+		<div className="table-container">
 		{props.expenses.map((expense) => {
 			return <ExpenseListItem key={expense.id} {...expense}/>
 		})}
+		</div>
 	</div>
 	);
 

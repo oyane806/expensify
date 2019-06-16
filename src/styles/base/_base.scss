@@ -6,6 +6,11 @@ html {
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: $m-size;
+	max-width: 80rem;
+	margin: 10rem auto 10rem;
+	padding: 0 $m-size;
+/*	border: 1px solid yellow;*/
+
 }
 
 button {
